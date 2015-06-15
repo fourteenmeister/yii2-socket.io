@@ -1,0 +1,12 @@
+{
+    "name": "yii2-socket.io",
+    "version": "0.0.1",
+    "description": "Server for socket.io",
+    "main": "server.js",
+    "dependencies": {
+        "socket.io": "^1.3.*"
+    },
+    "devDependencies": {},
+    "author": "",
+    "license": "ISC"
+}

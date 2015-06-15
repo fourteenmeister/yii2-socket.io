@@ -1,0 +1,36 @@
+{
+    "name": "fourteenmeister/yii2-socket.io",
+    "description": "Socket.IO enables real-time bidirectional event-based communication.",
+    "type": "yii-extension",
+    "keywords": [
+        "yii",
+        "extension"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Andrey Kamaev",
+            "email": "fourteenmeister@gmail.com",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Alexey Panasik",
+            "email": "unnfly@gmail.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "wisembly/elephant.io": "~3.0"
+    },
+	"scripts": {
+        "post-package-install": [
+            "fourteenmeister\\socketIO\\Bootstrap::initialize"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "fourteenmeister\\socketIO\\": "libs/php/"
+        }
+    },
+    "minimum-stability": "dev"
+}
